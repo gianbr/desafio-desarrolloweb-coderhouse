@@ -1,0 +1,51 @@
+.fa-facebook-square, .fa-instagram, .fa-twitter, .fa-youtube, .fa-whatsapp{ //usar each?
+    color: white;
+}
+
+.linkRedes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.piePagina{
+    text-align: center;
+    color: white;
+    align-items: center;
+
+    p{
+        margin: 0;
+        font-weight: 600;
+    }
+
+    h4{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    ul{
+        display: inline-block;
+        justify-content: center;
+
+        li{
+            display: inline-block;
+            text-decoration: none;
+            list-style: none;
+            font-size: 20px;
+            color: rgb(10, 0, 0);
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                list-style: none;
+                font-size: 20px;
+                color: rgb(10, 0, 0);
+            }
+        }
+    }
+}
+
+.row{
+    margin: 0;
+}

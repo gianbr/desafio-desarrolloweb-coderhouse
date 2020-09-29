@@ -1,0 +1,13 @@
+.col-md-6{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+h2.h2-form, p.p-form, .row label{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+//usar mixins

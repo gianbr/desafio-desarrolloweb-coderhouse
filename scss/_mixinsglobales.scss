@@ -1,0 +1,25 @@
+@mixin boton($colorLetra, $colorFondo) {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: $colorLetra;
+    background-color: $colorFondo;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 550;
+    margin-top: 20px;
+
+    &:hover{
+        @if $colorLetra == black and $colorFondo == #ddd {
+            background-color: #555;
+            color: white;
+        }@else if $colorLetra == #ddd and $colorFondo == black {
+            background-color: white;
+            color: rgb(0, 0, 0);
+        }
+
+        
+    }
+
+}
