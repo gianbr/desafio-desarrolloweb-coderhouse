@@ -29,3 +29,7 @@
 .imagenFondo-nosotros{
     @include imagenFondo(0.5, aboutus);
 }
+
+.imagenFondo-faq{
+    @include imagenFondo(0.5, faq);
+}

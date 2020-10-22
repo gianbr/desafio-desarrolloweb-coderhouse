@@ -3,56 +3,301 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sitio Web de Gian</title>
+        <meta name="description" content="Empresa de Turismo en Argentina; ofrecemos paquetes turisticos y viajes hacia todo el mundo">
+        <meta name="keywords"  content="Turismo, Hoteles, Viajes, Vacaciones, Playa, Nieve">
+        <meta name="author" content="Gianluca Brunner">
+        <title>FAQ - VIAJAR - Viajes & Turismo</title>
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Alata&amp;display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.3up.dk/mdi@2.2.43/css/materialdesignicons.min.css">
         <link rel="stylesheet" href="../css/all.css">
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/main.css"> 
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid p-0 grilla imagenFondo-faq">
             <header>
-                <div class="cabecera">
-                    <h1 class="logo">VIAJAR</h1>
-                    <!-- Logo -->
-                    <nav class="cabeceraListas">
-                        <div class="menuNavegacion">
-                            <ul>
-                                <li> <a href="../index.html">Inicio</a></li>
-                                <li> <a href="destinos.html">Destinos</a></li>
-                                <li> <a href="faq.html"><strong>FAQ</strong></a></li>
-                                <li> <a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                                <li> <a href="contacto.html">Contactanos</a></li>
+                <div>
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        <a class="logo animate__animated animate__fadeInTopLeft" href="../index.html">VIAJAR</a>
+                        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="basicExampleNav">
+                            <ul class="navbar-nav menuNavegacion">
+                                <li>
+                                    <a href="../index.html">Inicio   
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="destinos.html">Destinos</a>
+                                </li>
+                                <li>
+                                    <a href="sobre-nosotros.html">Sobre Nosotros</a>
+                                </li>
+                                <li class="menuActivo">
+                                    <a href="faq.html"">Preguntas Frecuentes</a>
+                                </li>
+                                <li>
+                                    <a href="contacto.html">Contactanos</a>
+                                </li>
                             </ul>
-                        </div>
+                        </div> 
                     </nav>
                 </div>
             </header>
-            <div class="imagenFondo">
-                <main class="mainCentrado">
-                    <div class="containerFaq">
-                        <h2>Preguntas Frecuentes</h2>
-                        <dl>
-                            <dt>¿Cómo cancelo mi viaje?</dt>
-                            <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae nemo, repellat et cumque deleniti nobis quos aperiam nostrum minus. Quod natus possimus labore et praesentium accusamus iure dignissimos optio.</dd>
-                        
-                            <dt>¿Cómo cambio la fecha de mi viaje?</dt>
-                            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequatur molestiae rem quam quae, possimus, fugit veniam est obcaecati tempora temporibus debitis ducimus placeat repudiandae minus. Cum reprehenderit tempora molestias!</dd>
-                        
-                            <dt>¿Cómo cambio el destino de mi viaje?</dt>
-                            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequatur molestiae rem quam quae, possimus, fugit veniam est obcaecati tempora temporibus debitis ducimus placeat repudiandae minus. Cum reprehenderit tempora molestias!</dd>
-                            
-                            <dt>¿Puedo armar paquetes de viaje?</dt>
-                            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, dignissimos neque? Fugiat, nihil veritatis maxime incidunt sed sapiente quis error blanditiis non, illo distinctio, sint earum praesentium nisi ex at!</dd>
-                        </dl>
-                        <p>Por cualquier otra pregunta, no dudes en <span><a href="contacto.html">consultarnos</a></span></p>
+            <main>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="nav nav-pills faq-nav" id="faq-tabs" role="tablist" aria-orientation="vertical">
+                                <a href="#tab1" class="nav-link active" data-toggle="pill" role="tab" aria-controls="tab1" aria-selected="true">
+                                    <i class="mdi mdi-help-circle"></i> Preguntas Frecuentes
+                                </a>
+                                <a href="#tab2" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab2" aria-selected="false">
+                                    <i class="mdi mdi-account"></i> Viajes
+                                </a>
+                                <a href="#tab3" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab3" aria-selected="false">
+                                    <i class="mdi mdi-account-settings"></i> Paquetes
+                                </a>
+                                <a href="#tab4" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab4" aria-selected="false">
+                                    <i class="mdi mdi-heart"></i> Excursiones
+                                </a>
+                                <a href="#tab5" class="nav-link" data-toggle="pill" role="tab" aria-controls="tab5" aria-selected="false">
+                                    <i class="mdi mdi-coin"></i> Metodos de pago
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="tab-content" id="faq-tab-content">
+                                <div class="tab-pane show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
+                                    <div class="accordion" id="accordion-tab-1">
+                                        <div class="card">
+                                            <div class="card-header" id="accordion-tab-1-heading-1">
+                                                <h5>
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-1" aria-expanded="false" aria-controls="accordion-tab-1-content-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, iure?</button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse show" id="accordion-tab-1-content-1" aria-labelledby="accordion-tab-1-heading-1" data-parent="#accordion-tab-1">
+                                                <div class="card-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolor libero aliquam soluta repudiandae fuga accusantium sit et dicta illo magni commodi rerum illum dolorem quod itaque, atque, sunt quaerat.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="accordion-tab-1-heading-2">
+                                                <h5>
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-2" aria-expanded="false" aria-controls="accordion-tab-1-content-2">Lorem ipsum dolor sit amet?</button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse" id="accordion-tab-1-content-2" aria-labelledby="accordion-tab-1-heading-2" data-parent="#accordion-tab-1">
+                                                <div class="card-body">
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam impedit perspiciatis, recusandae distinctio sit totam blanditiis autem soluta error eligendi odio aliquam consectetur animi id rerum harum? Totam, omnis reprehenderit.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="accordion-tab-1-heading-3">
+                                                <h5>
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-3" aria-expanded="false" aria-controls="accordion-tab-1-content-3">Lorem ipsum dolor sit?</button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse" id="accordion-tab-1-content-3" aria-labelledby="accordion-tab-1-heading-3" data-parent="#accordion-tab-1">
+                                                <div class="card-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo numquam possimus nisi iusto cumque vel sint magnam tempore quos iure accusamus amet voluptates ea asperiores, nostrum tenetur quibusdam, ipsa ab.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="accordion-tab-1-heading-4">
+                                                <h5>
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-1-content-4" aria-expanded="false" aria-controls="accordion-tab-1-content-4">Lorem ipsum dolor sit amet consectetur?</button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse" id="accordion-tab-1-content-4" aria-labelledby="accordion-tab-1-heading-4" data-parent="#accordion-tab-1">
+                                                <div class="card-body">
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus aspernatur consequatur obcaecati repudiandae! Beatae nisi iste recusandae quos assumenda laborum facilis tenetur ipsum deleniti? Nostrum obcaecati a magnam repellat dolorem</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab2" role="tabpanel" aria-labelledby="tab2">
+                                    <div class="accordion" id="accordion-tab-2">
+                                        <div class="card">
+                                            <div class="card-header" id="accordion-tab-2-heading-1">
+                                                <h5>
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-1" aria-expanded="false" aria-controls="accordion-tab-2-content-1">Lorem ipsum dolor sit amet consectetur?</button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse show" id="accordion-tab-2-content-1" aria-labelledby="accordion-tab-2-heading-1" data-parent="#accordion-tab-2">
+                                                <div class="card-body">
+                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa placeat consequatur asperiores laboriosam vitae impedit maiores nesciunt eum saepe molestiae vel nihil voluptates voluptatum reiciendis cum expedita nostrum, rem ducimus?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="accordion-tab-2-heading-2">
+                                                <h5>
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-2" aria-expanded="false" aria-controls="accordion-tab-2-content-2">Lorem ipsum dolor sit?</button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse" id="accordion-tab-2-content-2" aria-labelledby="accordion-tab-2-heading-2" data-parent="#accordion-tab-2">
+                                                <div class="card-body">
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo esse doloremque ex sit temporibus corrupti fugit quasi ullam facere alias. Id corrupti sequi eos earum, nisi recusandae est debitis illum!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="accordion-tab-2-heading-3">
+                                                <h5>
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-3" aria-expanded="false" aria-controls="accordion-tab-2-content-3">Lorem ipsum dolor sit?</button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse" id="accordion-tab-2-content-3" aria-labelledby="accordion-tab-2-heading-3" data-parent="#accordion-tab-2">
+                                                <div class="card-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae accusamus deserunt inventore iste error! Laborum deserunt aut ipsum tempora quasi cumque, aliquid odio optio architecto porro, inventore ut quas commodi.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="accordion-tab-2-heading-4">
+                                                <h5>
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-2-content-4" aria-expanded="false" aria-controls="accordion-tab-2-content-4">Lorem, ipsum dolor sit amet consectetur adipisicing?</button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse" id="accordion-tab-2-content-4" aria-labelledby="accordion-tab-2-heading-4" data-parent="#accordion-tab-2">
+                                                <div class="card-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eveniet magni quas quasi incidunt natus iusto possimus? Dolor repellat doloribus fuga ipsam adipisci, animi explicabo, quis necessitatibus alias iusto tempore.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab3" role="tabpanel" aria-labelledby="tab3">
+                                    <div class="accordion" id="accordion-tab-3">
+                                        <div class="card">
+                                            <div class="card-header" id="accordion-tab-3-heading-1">
+                                                <h5>
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-1" aria-expanded="false" aria-controls="accordion-tab-3-content-1">Lorem ipsum dolor, sit amet consectetur adipisicing?</button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse show" id="accordion-tab-3-content-1" aria-labelledby="accordion-tab-3-heading-1" data-parent="#accordion-tab-3">
+                                                <div class="card-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos officiis temporibus iure eaque reprehenderit facilis harum quibusdam voluptate amet, dignissimos repellat, similique molestias rem, explicabo recusandae enim pariatur quasi ducimus!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="accordion-tab-3-heading-2">
+                                                <h5>
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-2" aria-expanded="false" aria-controls="accordion-tab-3-content-2">Lorem ipsum dolor sit?</button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse" id="accordion-tab-3-content-2" aria-labelledby="accordion-tab-3-heading-2" data-parent="#accordion-tab-3">
+                                                <div class="card-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia hic et illum maxime odio neque. Earum doloribus similique itaque atque illo, temporibus qui sed ratione eos. Quod cumque animi quo!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="accordion-tab-3-heading-3">
+                                                <h5>
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-3-content-3" aria-expanded="false" aria-controls="accordion-tab-3-content-3">Lorem ipsum dolor sit amet?</button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse" id="accordion-tab-3-content-3" aria-labelledby="accordion-tab-3-heading-3" data-parent="#accordion-tab-3">
+                                                <div class="card-body">
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio voluptatem blanditiis quos repellat ipsa eos quia, veniam alias dolorum asperiores molestiae eius, beatae atque commodi quis, in delectus id consequuntur.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab4" role="tabpanel" aria-labelledby="tab4">
+                                    <div class="accordion" id="accordion-tab-4">
+                                        <div class="card">
+                                            <div class="card-header" id="accordion-tab-4-heading-1">
+                                                <h5>
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-1" aria-expanded="false" aria-controls="accordion-tab-4-content-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, libero?</button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse show" id="accordion-tab-4-content-1" aria-labelledby="accordion-tab-4-heading-1" data-parent="#accordion-tab-4">
+                                                <div class="card-body">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quis nihil culpa reprehenderit velit quasi quas, vel quod, nulla eligendi excepturi minima? Ut ratione laudantium cum sapiente necessitatibus excepturi cupiditate!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="accordion-tab-4-heading-2">
+                                                <h5>
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-2" aria-expanded="false" aria-controls="accordion-tab-4-content-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur blanditiis.?</button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse" id="accordion-tab-4-content-2" aria-labelledby="accordion-tab-4-heading-2" data-parent="#accordion-tab-4">
+                                                <div class="card-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non vel facilis praesentium. Eveniet quae maxime, commodi blanditiis repellendus eos perferendis! Voluptas tempora fuga nemo recusandae ratione quo voluptatum veritatis.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="accordion-tab-4-heading-3">
+                                                <h5>
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-4-content-3" aria-expanded="false" aria-controls="accordion-tab-4-content-3">Lorem ipsum dolor sit amet consectetur?</button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse" id="accordion-tab-4-content-3" aria-labelledby="accordion-tab-4-heading-3" data-parent="#accordion-tab-4">
+                                                <div class="card-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aspernatur hic qui asperiores eos temporibus cumque alias voluptate odit esse illum fuga accusantium sequi ipsam aperiam expedita, corrupti nihil facere?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab5" role="tabpanel" aria-labelledby="tab5">
+                                    <div class="accordion" id="accordion-tab-5">
+                                        <div class="card">
+                                            <div class="card-header" id="accordion-tab-5-heading-1">
+                                                <h5>
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-1" aria-expanded="false" aria-controls="accordion-tab-5-content-1">Lorem, ipsum dolor?</button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse show" id="accordion-tab-5-content-1" aria-labelledby="accordion-tab-5-heading-1" data-parent="#accordion-tab-5">
+                                                <div class="card-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aspernatur similique cum amet, veritatis nesciunt distinctio eligendi ducimus inventore in ipsum neque consequatur dolor commodi asperiores quia nihil voluptatem dicta.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="accordion-tab-5-heading-2">
+                                                <h5>
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#accordion-tab-5-content-2" aria-expanded="false" aria-controls="accordion-tab-5-content-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore sunt atque ratione?</button>
+                                                </h5>
+                                            </div>
+                                            <div class="collapse" id="accordion-tab-5-content-2" aria-labelledby="accordion-tab-5-heading-2" data-parent="#accordion-tab-5">
+                                                <div class="card-body">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam? Reprehenderit minima dolor culpa. Cupiditate sint iusto vitae repellat sunt eos perferendis ratione. Pariatur, distinctio enim! Veritatis quisquam voluptatibus numquam?</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </main>
-                <footer>
-                    <div class="piePagina">
-                        <p>viajar@viajar.com</p>
+                </div>
+            </main>
+            <footer class="mastfoot mt-auto">
+                <div class="row piePagina">
+                    <div class="col-12 col-md-4">
+                        <p class="mb-2">viajar@viajar.com</p>
+                    </div>
+                    <div class="col-12 col-md-4">
                         <h4>© Copyright 2020 - Viajar</h4>
+                    </div>
+                    <div class="col-12 col-md-4">
                         <div class="linkRedes">
                             <p class="textoRedes">También podés contactarnos a través de</p>
                             <ul>
@@ -62,10 +307,13 @@
                                 <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
                                 <li><a href="https://www.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
                             </ul>
-                        </div> 
+                        </div>
                     </div>
-                </footer>
-            </div>
+                </div>
+            </footer>
         </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </body>
 </html>
